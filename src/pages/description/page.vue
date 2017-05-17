@@ -4,13 +4,7 @@
       <ru-text v-if="lang == 'ru'" />
       <eng-text v-if="lang == 'en'" />
     </article>
-    <aside id="rightCol">
-      <div class="post" v-for="post in posts">
-        <img src="post.img" alt="">
-        <h4>{{ post.title }}</h4>
-        <router-link :to="'/' + langChoised + '/news/' + post.id"> Читать далее </router-link>
-      </div>
-    </aside>
+    <sidebar langChoised="lang" />
     <div style="clear: both;"></div>
     <!--<nav class="bottom-nav">
       <router-link :to="'/' + lang + '/hard#tabs'" v-smooth-scroll><span>{{ text.btns.tech }}</span></router-link>

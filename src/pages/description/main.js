@@ -1,26 +1,14 @@
 import ruText from './content/ru.md'
 import engText from './content/eng.md'
+import sidebar from '~/src/sidebar/sidebar.vue'
 export default {
   components: {
-    ruText, engText
+    ruText, engText, sidebar
   },
   props: ['lang'],
   data () {
     return {
-      posts: [
-        {
-          title: 'Первая презентация Вискографа и Амилографа на международной конференция «Крахмал и крахмалопродукты: рынок возможностей»',
-          img: '',
-          id: 1,
-          date: ''
-        },
-        {
-          title: 'Управление реологическими свойствами вместе с CoonLab',
-          img: '',
-          id: 2,
-          date: ''
-        },
-      ]
+ 
     }
   }
 }

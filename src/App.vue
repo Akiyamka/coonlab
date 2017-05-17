@@ -15,13 +15,13 @@
       <div class="lang-switcher">
         <span>{{ langChoised }}</span>
         <ul id="lang">
-          <li v-for="lang in langs" @click="langChoised = lang.value">{{ lang.name }}</li>
+          <li v-for="lang in langs" @click="langChoised = lang.value">{{ lang.name }}</i>
         </ul>
      </div>      
 
     </header>
     <div id="gallery">
-      <div class="image"></div>
+      <div class="image" v-for="image in images" :style="{ backgroundImage: 'url(' + image + ')' }"></div>
       <div class="descript">
         <h1>{{ translateTop.title }}</h1>
         <p>{{ translateTop.dicsript }}</p>
@@ -331,7 +331,6 @@ aside
         background-repeat: no-repeat
         background-position: center
         margin-right: 30px
-        background-image: url("./assets/visko.png")
       .descript
         display: flex
         flex-flow: column nowrap
@@ -422,7 +421,7 @@ aside
     #top
       #gallery
         .image
-          background-image: url("./assets/visko_one.png") !important
+          background-image: url("../dist/visko_one.png") !important
           background-size: contain
         .descript
           text-align: center
