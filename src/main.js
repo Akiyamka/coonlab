@@ -1,8 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
-import PageDecription from './PageDecription.vue'
-import PageHard from './PageHard.vue'
-import PageSoft from './PageSoft.vue'
+import PageDecription from './pages/description/page.vue'
+import PageHard from './pages/hard/page.vue'
+import PageSoft from './pages/soft/page.vue'
+import PageNews from './pages/news/page.vue'
 
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
@@ -15,6 +16,7 @@ const routes = [
       { path: ':lang/decription', component: PageDecription },
       { path: ':lang/hard', component: PageHard },
       { path: ':lang/soft', component: PageSoft },
+      { path: ':lang/news/:id', component: PageNews }
     ],
     redirect: '/ru/decription'
   }

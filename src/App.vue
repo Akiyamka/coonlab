@@ -42,7 +42,7 @@
       <router-link :to="'/' + langChoised + '/soft'">{{translateTabs.soft}}</router-link>
     </nav>
   </div>
-    <router-view :lang="$route.params.lang"></router-view>
+    <router-view :lang="$route.params.lang" :id="$route.params.id"></router-view>
 
   <footer>
     <span>ООО "КунЛаб", 2016</span>
