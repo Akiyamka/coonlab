@@ -15,3 +15,9 @@
 	</div>
 </template>
 <script src="./main.js"></script>
+<style lang="stylus">
+  section
+    p
+     & > img
+      width: 100%
+</style>

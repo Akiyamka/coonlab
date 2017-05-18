@@ -2,7 +2,7 @@
   <aside id="rightCol">
     <h2>Новости</h2>
     <div class="post" v-for="post in posts">
-      <img src="post.img" alt="">
+      <img :src="post.img" alt="">
       <h4>{{ post.title }}</h4>
       <router-link :to="'/' + langChoised + '/news/' + post.id" class="readmore">Подробнее</router-link>
     </div>
@@ -17,13 +17,13 @@ export default {
       posts: [
         {
           title: 'Первая презентация Вискографа и Амилографа на международной конференция «Крахмал и крахмалопродукты: рынок возможностей»',
-          img: '',
+          img: './photos/pic1.jpg',
           id: 1,
           date: ''
         },
         {
           title: 'Управление реологическими свойствами вместе с CoonLab',
-          img: '',
+          img: './photos/pic3.jpg',
           id: 2,
           date: ''
         }

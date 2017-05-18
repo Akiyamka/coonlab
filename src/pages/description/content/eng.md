@@ -35,3 +35,5 @@ The test will provide you with a reliable and reproducible profile of rheologica
 - B - Макс. клейстеризация
 - B-C - Вязкость во время выдержки
 - D - Вязкость в конце охлаждения
+
+![grpah](dist/graph.svg "Graph example")
